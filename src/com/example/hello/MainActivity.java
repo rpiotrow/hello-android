@@ -14,7 +14,7 @@ public class MainActivity extends FragmentActivity {
         if (savedInstanceState == null) {
 	        getSupportFragmentManager()
 	        	.beginTransaction()
-	        	.add(R.id.fragment_container, new TextFragment())
+	        	.add(R.id.fragment_container, TextFragment.create("Hello fragment"))
 	        	.commit();
         }
         	
